@@ -1,0 +1,324 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1046{\fonttbl{\f0\fnil\fcharset0 Calibri;}{\f1\fnil Calibri;}}
+{\colortbl ;\red255\green0\blue0;\red0\green0\blue255;\red0\green176\blue80;\red0\green77\blue187;\red155\green0\blue211;}
+{\*\generator Riched20 10.0.19041}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\f0\fs22\lang22 MODULO 01 \par
+github.com/gustavoguanabara\par
+gustavoguanabara.github.io\par
+\par
+UTF 8 ?\par
+\par
+\b\fs28 ESTRUTURA B\'c1SICA DE DOCUMENTO HTML\fs24\par
+\b0\fs22\par
+<!DOCTYPE html>   \cf1 / Obrigat\'f3rio sempre ter em html\cf0\par
+<html lang="pt-br">  \par
+     <head>\par
+               <meta charset="UTF-8">\par
+                <meta name="viewport"\par
+                 content="widt=device-width,initial-scale=1.0">\par
+                 <title>\tab Document</title>\par
+      </head>\par
+      <body>\par
+      <h1>Ol\'e1, Mundo ! </h1>\par
+      </body>\par
+</html>\par
+\par
+\b\fs24 PARA CRIAR ESSE CODIGO BASE NO VISUAL STUDIO, ABRA A P\'c1GINA, DIGITE ! E ESPERE.\b0\fs22\par
+ISSO TUDO FICA DENTRO DO CAMPO DE BODY, AONDE SE COLOCAR AS INFORMA\'c7\'d5ES DO SITE.\par
+<mark></mark> - Para deixar o texto com marca texto , para mudar a cor de todas as palavras com marca texto no c\'f3digo de uma vez, v\'e1 na parte de head e fa\'e7a esse c\'f3digo que est\'e1 em negrito\par
+\par
+<head>\par
+    <meta charset="UTF-8">\par
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">\par
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">\b\par
+    <style>\par
+        mark\{\par
+            background-color: aqua;\par
+        \}\par
+    </style>\par
+\b0     <title>Formata\'e7\'e3o de Textos</title>\par
+</head>\par
+\b\fs28\par
+CENTRALIZA\'c7\'c3O DE TEXTOS, IMAGENS E AFINS NO HTML\par
+\b0\fs24 Dentro do <body> Crie um bloco com o <div>  e com auxilio do atributo "class" determine um nome, dentro dele coloque tudo o que deseja centralizar ex:\par
+<body>\par
+<div class="centralizar-teste">\par
+<h1> Teste de centraliza\'e7\'e3o</h1>\par
+</div>\par
+</body>\par
+\par
+E ap\'f3s isso, volte para a tag <styles> dentro da tag <head> e escreva o c\'f3digo\par
+\par
+<head>\par
+<style>\par
+.centralizar-teste\{\par
+text-align: center\par
+\}\par
+</style>\par
+</head>\par
+\b\fs28\par
+TAGS IMPORTANTES\fs24\par
+\b0 <!-- ahahduhd--> Para adicionar coment\'e1rios no html\b\par
+\b0\fs22 <q></q> - Para adicionar aspas em uma cita\'e7\'e3o, sempre use essa tag para cita\'e7\'f5es\par
+<blockquote></blockquote> - para cita\'e7\'f5es completas, no c\'f3digo ela fica mais destacada, tem um espa\'e7o da margem da p\'e1gina, para incluir o link do texto, inclua cite= na tag. ex: <blockquote cite = {{\field{\*\fldinst{HYPERLINK www.diadijaidj.com }}{\fldrslt{www.diadijaidj.com\ul0\cf0}}}}\f0\fs22 >\par
+<em></em> - Para deixar com \i ENFASE\i0  (IT\'c1LICO)\par
+<strong></strong> - Para deixar \b STRONG\b0  (negrito)\par
+<h1></h1> \'c9 para o t\'edtulo \par
+<hr> \'e9 para criar um linha na p\'e1gina\par
+<p></p> \'e9 para pular para a pr\'f3xima linha \par
+<br> no meio do texto, pula de linha \par
+  <img src="AQUI SE COLOCA O ENDERE\'c7O DA IMAGEM" alt="AQUI \'c9 A DESCRI\'c7\'c3O DA IMAGEM"> \par
+img de enter para adicionar imagens, voc\'ea pode adicionar tanto as imagens de arquivos que est\'e3o no computador, quando imagens de links. Verifique sempre o tamanho e a resolu\'e7\'e3o para que o site n\'e3o fique pesado\par
+<code></code> - para digitar c\'f3digos nos textos com espa\'e7amento \par
+<pre></pre> Para que o jeito como se escreve no c\'f3digo apare\'e7a examente na p\'e1gina, incluindo os espa\'e7amentos.\par
+<abbr></abbr> - Abrevia\'e7\'f5es - Para criar um popup com a palavra completa da abrevia\'e7\'e3o\par
+<ol> </ol> - Para Criar listar ordenadas, ex 1.,2.,3., Existem cinco modelos de numera\'e7\'e3o, s\'e3o elas: 1 - numera\'e7\'e3o, ex: 1,2,3. A - ordem alfabetica Maiuscula, ex: A,B,C, a - Ordem Alfabetica Minuscula, ex:a,b,c, I- N\'fameros romanos maiusculos, ex: I,II,III e i- n\'fameros romanos com letras minusculas, ex: i,ii,iii, para mudar o formato adicione na tag de inicio type, ex <ol type= A ></ol>, para que a n\'famera\'e7\'e3o comece a partir de outro n\'famero que n\'e3o seja o 1, adicione na tag de inicio start, ex: <ol type = A start =10></ol>, para adicionar paragrafos com a lista, adicione a tag <li>, ela n\'e3o precisa de tag de fechamento (</li>) ex:\par
+<ol type = A start = 10 >\par
+<li> Acordar\par
+<li> Tomar Caf\'e9\par
+</ol>\par
+\par
+<ul></ul> Para Criar listas n\'e3o ordenadas, sem n\'famera\'e7\'f5es, apenas com pontos, existem tr\'eas tipos para que seja alterado esses pontos, s\'e3o eles: disc, circle e square, para alterar, use type na tag de inicio, precisa usar a tag <li> para se criar as listas tamb\'e9m \par
+\par
+\b OBS: \b0 Pode colocar lista dentro de outras listas, basta adicionar a tag do tipo de lista que deseja, e incluir os itens dentro.\par
+\b LISTA DE DEFINI\'c7\'c3O: \b0  \'e9 como se fosse um dicion\'e1rio, com uma palavra chave e sua explica\'e7\'e3o abaixo. A tag inicial \'e9 <dl></dl>, para colocar a palavra chave se usa <dt></dt> e para incluir a defini\'e7\'e3o, se usa <dd></dd>, por exemplo\par
+<dl>\par
+<dt>HTML</dt>\par
+<dd>Linguagem de marca\'e7\'e3o para a cria\'e7\'e3o de conte\'fado de um site.</dd>\par
+</dl>\par
+\b COMO IR\'c1 FICAR:\par
+\b0 HTML\par
+     Linguagem de marca\'e7\'e3o para a cria\'e7\'e3o de conte\'fado de um site.\par
+\par
+\b INCLUIR LINKS EXTERNOS\par
+\b0 Para incluir um link em um texto selecione qual texto quer que vire um link e abra a tag <a href="COLOQUE AQUI O LINK"></a>, ex\par
+Esse \'e9 o <a href="{{\field{\*\fldinst{HYPERLINK https://youtube.com/ }}{\fldrslt{https://youtube.com/\ul0\cf0}}}}\f0\fs22 ">canal </a> do youtube\par
+Para abrir o link em uma nova aba, inclua na tag <a> taget="_blank" rel="external", ex:\par
+Esse \'e9 o <a href="{{\field{\*\fldinst{HYPERLINK https://youtube.com/ }}{\fldrslt{https://youtube.com/\ul0\cf0}}}}\f0\fs22 " target="_blank" rel="external">canal </a> do youtube\par
+\par
+\b LINKS INTERNOS - LINKS DENTRO DO SEU PR\'d3PRIO SITE\par
+\b0 O mesmo procedimento para links externos, por\'e9m as p\'e1ginas que ir\'e3o aparecer, precisam estar na mesma pasta. \par
+N\'e3o precisar\'e1 usar target="_blank", pois n\'e3o precisar\'e1 abrir em uma nova aba, a n\'e3o ser que seja link externo, ent\'e3o se usa target="_self"\par
+Para pular de p\'e1gina, inclua na tag <a> rel="next" e quando o link for para voltar para a p\'e1gina anterior inclua na tag <a> rel="prev", pois isso sinaliza ao navegador a ordem =das coisas \par
+Para adicionar p\'e1ginas que est\'e3o em outra pasta, dentro da tag <a> escreva ../ e ir\'e1 aparecer as op\'e7\'f5es de pastas para selecionar o arquivo, por\'e9m ele s\'f3 mostra at\'e9 uma p\'e1gina anterior, para voltar mais pastas, inclua novamente os caractere ../../ at\'e9 encontrar a p\'e1gina que precisa. \par
+\b INCLUIR ITENS PARA DOWNLOAD\par
+\b0 Na tag <a> adicione o item que quer que apare\'e7a para fazer download, esses itens dever\'e3o estar em uma pasta no seu computador. \par
+Alguns itens precisam adicionar um type para que que seja feito o download, no site iana.org/assignments/media-types, voc\'ea ir\'e1 encontrar de alguns arquivos, esse type se adiciona na tag <a>, ex:\par
+ <li><a href="Livro/08 - Formata\'e7\'e3o de Textos.zip\b " type= "application/zip"\b0 >Baixe o livro em ZIP</a></li>\par
+\b LINKS EM IMAGENS \par
+\b0\par
+<a href="phantogram.html"><img src="imagens/phantogram.png"></a>\b\par
+\par
+PARA INCLUIR IMAGENS QUE SE ADAPTAM CONFORME O TAMANHO DA P\'c1GINA\par
+\b0 Para que a imagem fique no mesmo tamanho visualizando a p\'e1gina de um celular, tablet ou notebook. Inclua no body a tag <picture></picture>, dentro dela, a tag <img> com a imagem original de maior tamanho, se for incluir uma imagem menor, coloque acima da tag <img> a tag  <source:media:type> e inclua a foto de tamanho menor, caso precisa adicionar mais uma foto pequena, repita a tag source, sempre acima ex:\par
+\par
+ <picture>\par
+       \cf3  <source media="(max-width: 750px )" srcset="Imagens/foto-p.png" type="image/png"> IMAGEM PEQUENA\par
+\cf4         <source media="(max(\b SEMPRE VERIFIQUE SE EST\'c1 EM MAX\b0 )-width: 1000px )" srcset="Imagens/foto-m.png" type="image/\b png(N\'c3O ESQUE\'c7A DE INSERIR O FORMATO DA IMAGEM)\b0 "> IMAGEM M\'c9DIA\par
+\cf0         \cf1 <img src="Imagens/foto-g.png" alt="Imagem Flex\'edvel"> IMAGEM GRANDE\par
+\cf0     </picture>\par
+\b ADICIONAR \'c1UDIO \par
+\b0 Existem duas maneiras, a mais simples \'e9 pela tag\par
+<audio src="midia/musica.mp3" controls autoplay></audio> \par
+\ul OBS: Dependendo do navegador, o autoplay n\'e3o funciona\par
+\ulnone Os formatos que se podem usar para \'e1udio s\'e3o MP3, WAV(evite, muito pesado) e OGG\ul\par
+\ulnone E tamb\'e9m tem essa forma, \'e9 importante colcoar v\'e1rios formatos de audio, pois nem todos os navegadores tem compatibilidade com alguns formatos\par
+ <audio preload="\b metadata\b0 " controls autoplay> - \b Verificar qual a melhor op\'e7\'e3o, auto, metadata ou none \b0\par
+    <source src="midia/musica.mp3" type="audio/mpeg">\par
+   </audio>\par
+\par
+\b ADICIONAR V\'cdDEOS - SERVIDOR PROPRIO - \par
+\ul\fs28 IMPORTANTE, HOSPEDAR NO PROPRIO SERVIDOR GERA UM CUSTO ELEVADO DE HOSPEDAGEM DE SITE, SEMPRE CONVERSE COM SEU CLIENTE SOBRE ISSO. \par
+\ulnone\fs22\par
+\b0 Existem duas formas de colocar v\'eddeos, igual ao de \'e1udio, a forma simplificada \par
+<video src="midia/Meuvideonovo.mp4" width="300" controls></video>\par
+e tamb\'e9m a mais elaborada, para que se inclua v\'e1rios formatos de video, no caso de n\'e3o ter compatibilidade com algum video \par
+\par
+ <video width="300" \cf1 poster="imagens/passaro.png" (Essa \'e9 capa do v\'eddeo) \cf0 controls>\par
+        <source src="midia/Meuvideonovo.mp4" type="video/mp4">\par
+        <source src="midia/Meuvideonovo.ogv" type="video/ogv">\par
+        <source src="midia/Meuvideo.webm" type="video/webm">\par
+        <p>Seu navegador n\'e3o tem compatibilidade com reprodu\'e7\'e3o de v\'eddeos.</p>\par
+\b ADICIONAR V\'cdDEOS - HOSPEDAGEM DE OUTROS SITES \par
+\b0 Uma dica \'e9 o youtube ou o vimeo, yt \'e9 gratuito, mas \'e9 publico, e o vimeo tem que pagar, mas o valor \'e9 muito menor que o servi\'e7o de hospedagem. \par
+OBS: para adicionar o codigo do video, copie o c\'f3digo do site e s\'f3 cole apos o titulo, n\'e3o precisa de <video>, ex:\par
+<body>\par
+    <h1>Home - Matthew Hall </h1>\par
+        <iframe width="560" height="315" src="{{\field{\*\fldinst{HYPERLINK https://www.youtube.com/embed/AEXPV3SU3RE?si=iKDp7lAnYPZT5AeP }}{\fldrslt{https://www.youtube.com/embed/AEXPV3SU3RE?si=iKDp7lAnYPZT5AeP\ul0\cf0}}}}\f0\fs22 " title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>\par
+</body>\par
+\b\fs28 OBSERVA\'c7\'d5ES IMPORTANTES\par
+\b0\fs22\par
+No meio do c\'f3digo, caso precise escrever esses simbolos < >, voc\'ea precisara escrever &lt; (<) e &gt; (>) para mostrar no texto, pois caso voc\'ea coloque o simbolo mesmo, o c\'f3digo ir\'e1 interpretar como uma tag. \par
+Para adicionar simbolos especiais, vide os c\'f3digos no arquivo pdf, sempre com o simbolo & na frente, ex: &reg; &copy; &trade;\par
+Para adicionar Emojis, acesse o site Emojipedia.org, escolha o emoji, v\'e1 na parte que cita a informa\'e7\'e3o do c\'f3digo exadecimal, no caso do cora\'e7\'e3o com estrelas \'e9 U+1F496, copie apenas a parte 1F496, no c\'f3digo html, escreva &#x1F496; n\'e3o esque\'e7a de acrescentar &#x, c\'f3digo do emoji e ;\par
+FAVICON - no c\'f3digo html, v\'e1 na parte head, no visual studio, digite link, e selecione link favicon, selecione o favicon que est\'e1 na pasta do seu computador. A imagem sempre tem que ter a extens\'e3o .ico\par
+TITULOS: A hierarquia dos titulos vai do h1 at\'e9 o h6, sendo h1 o maior e h6 o menor\par
+ATALHOS NO VSTUDIO - CTRL + SHIFT + P \par
+CRIEI UM ATALHO PARA INCLUIR A TAG MAIS FACIL EM FRASES QUE N\'c3O FORAM INCLUIDAS,: SELECIONE O QUE VOC\'ca QUER COLOCAR EM TAG, CLIQUE EM CTRL + \\ - NA PARTE SUPERIOR  DIGITE A TAG, POR EXEMPLO P E DE ENTER, AUTOMATICAMENTE IR\'c1 COLOCAR O QUE VOC\'ca SELECIONOU DENTRO DA TAG <p> </p>\par
+Para pular de linha, sem quebrar ela com o enter, clique em ctrl + enter, ele abrir\'e1 uma linha nova abaixo da que voc\'ea terminou de escrever, caso precise adicionar uma linha nova acima clique em ctrl + shift + enter\par
+Para mudar v\'e1rias linhas ao mesmo tempo, para incluir a mesma coisa, pressione o ALT sempre, e clique aonde voc\'ea quer adicionar os itens,\par
+\par
+ATALHO PARA ADICIONAR COMENT\'c1RIO CTRL + ; \par
+\b\fs36\par
+CSS\par
+\fs22 Estilo inline\fs36\par
+\b0\fs22 S\'e3o c\'f3digos de css (estilos ) que ficam nas tags do html, alterando uma tag por uma. \'c9 recomendado para servi\'e7os apenas pontuais, mas n\'e3o ir\'e1 ser utilizado no dia a dia, pois \'e9 muito trabalhoso. Ex:\par
+<h1 style="color: rgb(64, 25, 90); background-color: rgb(181, 159, 204); font-size: 1.5em;">Cap\'edtulo 01</h1>\par
+VEJA COMO EST\'c1 MISTURADO EM APENAS UMA LINHA A TAG SINALIZANDO SER UM TITULO, O STYLE CONFIGURANDO O ESTILO E DEPOIS O TEXTO QUE IR\'c1 NO TITULO, FICA CONFUSO.\par
+\par
+\b Estilo Internos/Locais\par
+\b0 Eles s\'e3o um c\'f3digo de css mais organizados, que ficam dentro da tag <head> criando uma tag <style>, mas elas servem apenas para alterar uma p\'e1gina por vez, caso precisa fazer uma configura\'e7\'e3o em um site com 30 p\'e1ginas, esse estilo n\'e3o ir\'e1 atender. , ex\par
+<head>\par
+    \ul N\'c3O IMPORTA O LUGAR AONDE COLOCAR A TAG STYLE DENTRO DE HEAD\b\par
+\ulnone     <style>\par
+      body\{ \par
+        background-color: rgb(168, 150, 185);\par
+        font-size: 18px;\par
+        font-family: Georgia, 'Times New Roman', Times, serif;\par
+      \}\cf1\par
+      h1\{\par
+        color: rgb(73, 49, 95);\par
+        background-color: rgb(153, 133, 172); (PARA ENTENDER, OLHE A OBS ABAIXO)\par
+      \}\par
+\cf0       h2\{\par
+        color: rgb(94, 64, 122);\par
+      \}\par
+      p\{\par
+        text-align: justify;\par
+      \}\par
+    </style>\par
+\b0 </head>\par
+OBS: \cf1\b AP\'d3S ESPECIFICAR O QUE QUER ALTERAR NO MEIO DAS CHAVES COLOQUE AS ALTERA\'c7\'d5ES DE ESTILOS. PARA CADA PARTE SE ABRE E FECHA CHAVES, POR EXEMPLO, ALTERAR APENAS A COR DO H1 ABRE CHAVES E FECHA CHAVES, ALTERAR APENAS A FONTE DAS LETRAS DOS PARAGRAFOS, ABRE CHAVES E FECHA.\par
+\cf0\par
+Estilo Externo\par
+\b0 Para fazer altera\'e7\'f5es simultaneas em v\'e1rias p\'e1ginas, se usa esse estilo, voc\'ea ir\'e1 criar uma nova aba no visual studio, igual se cria o index.html, mas o final ser\'e1 .css\par
+Logo que criar a p\'e1gina, coloque essa regra \ul\b @charset "UTF-8";\b0  \ulnone ela serve para n\'e3o gerar incompatibilidade com simbolos, \'e9 apenas para css.\par
+Ir\'e1 fazer todos os ajustes de estilos nessa p\'e1gina, \par
+Para que a p\'e1gina de html reconhe\'e7a essa altera\'e7\'e3o de estilo, dentro de head, adicione  <link rel="stylesheet" href="\cf4 style.css(AQUI \'c9 O NOME DO ARQUIVO)\cf0 ">, se o seu site tiver 15 p\'e1ginas diferentes e voc\'ea quiser que siga o mesmo estilo, dever\'e1 colocar esse link em todas.\par
+OBS: Caso precise fazer uma altera\'e7\'e3o especifica em uma p\'e1gina s\'f3 em um item especifico, pode usar os outros estilos acima, lembrando que tem uma hierarquia de importancia, estilo inline \'e9 a que vai prevalecer de todas, estilo interno, ir\'e1 prevalecer apenas sobre o estilo externo, e se feita as altera\'e7\'f5es com esses estilos, o estilo externo ir\'e1 ser cancelado na parte especificada.\par
+\par
+\b CORES NO CSS\par
+\b0 Existem 4 formas de incluir cores no css:\par
+Representa\'e7\'e3o por nomes: <h2 \b style="background-color: blue; color: azure;">\b0 Exemplos de Cores</h2>\par
+Representa\'e7\'e3o por c\'f3digos hexadecimais: <h2 style\b ="background-color: #0000ff; color: #f0ffff;"\b0 >Exemplos de Cores</h2>\par
+Representa\'e7\'e3o em RGB (RED, GREEN, BLUE):  <h2 \b style="background-color: rgb(0, 0, 255); color: rgb(240, 255, 255);"\b0 >Exemplos de Cores</h2>\par
+Representa\'e7\'e3o por HSL (Hue, Saturation, Luminosity): <h2 \b style="background-color: hsl(240, 100%, 50%); color: hsl(180, 100%, 97\b0 %);">Exemplos de Cores</h2>\par
+\b\par
+\fs24 CONFIGURA\'c7\'c3O GLOBAL CSS\par
+\b0 Dentro de <head>\par
+*\{\par
+height:100%\par
+\}\par
+\b\fs36\par
+\fs22 background-attachment: fixed; - \b0 Deixar a cor de fundo fixa quando for rolar o site\b\par
+\par
+CRIAR DEGRADE NO CSS \par
+\par
+body\{\par
+           background-image: linear-gradient( to \cf1 bottom(\'e9 a posi\'e7\'e3o de onde come\'e7a o gradiente)\cf0  ,#FF6F59 ,#254441,#43AA8B,#B2B09B,#EF3054) ;\par
+        background-attachment: fixed;\par
+        \}\par
+\fs24 ALINHAMENTO DE TEXTOS CSS\par
+\b0 No style, dentro do que voc\'ea quer alinhar, digite text-align e escolha qual o alinhamento quer, \par
+text-indent - \'c9 para criar o espa\'e7o no inicio dos paragrafos \b\par
+\fs22\par
+\fs24 TAMANHO DE FONTES E SUAS MEDIDAS\par
+\par
+Medidas Absolutas: \b0 cm, mm, in(polegadas), px, pt, pc.\b\par
+Medidas Relativas: \b0 em, ex, rem, vw, vh, %.\fs22\par
+\ul\b\fs24 SEMPRE SIGA AS RECOMENDA\'c7\'d5ES DA W3C, E RECOMENDA-SE USAR EM E PX\par
+\par
+\ulnone\b0 Obs: As melhores medidas para se usarem s\'e3o em e px, de preferencia ao em, pois ele \'e9 um valor relativo ao tamanho da fonte original, se usar px, tem algumas telas que usam pixels diferentes, e isso pode causar altera\'e7\'e3o no tamanho das fontes\par
+\par
+\b PESO DAS FONTES \par
+\b0 N\'e3o se pode usar fontes simples, a fonte tem que ser habilitada para usar o peso.\par
+\b font-weight\b0 : para indicar o peso, que \'e9 deixar a fonte com mais negrito, come\'e7ando do mais leve para o mais pesado: lighter, normal, bold e bolder, ou ent\'e3o numerica, come\'e7a do 100 e vai at\'e9 900.\par
+\b font-style: \b0\'e9 para deixar em it\'e1lico \par
+\b text-decoration: underline: \b0 para sublinhado. \par
+no c\'f3digo ir\'e1 ser colocado dessa forma:\par
+\cf3 font-family: sans-serif;\par
+\cf4 font-weight: bolder;\par
+\cf1 font-style: italic;\par
+\cf5 font-size: 3em;\par
+\cf0\b OBS: \b0 Existe uma maneira de simplificar o c\'f3digo usando \b\fs28 shorthand font\b0\fs24 , que \'e9 um resumo com apenas o nome dos itens, mas tem que ser utilizado \ul\b exatamente\ulnone\b0  na ordem abaixo:\par
+\cf1 font-style \cf0 -> \cf4 font-weight \cf0 -> \cf5 font-size \cf0 ->\cf3 font-family\cf0\par
+No c\'f3digo ter\'e1 que ficar assim:\par
+font: \cf1 italic\cf0  \cf4 bolder\cf0  \cf5 3em\cf0  \cf3 sans-serif\par
+\par
+\cf0\b ADICIONAR FONTES DO GOOGLE FONTS\par
+\b0 Acesse o link do google fonts, selecione a fonte, v\'e1 em download e copie e cole o c\'f3difo que come\'e7a com @\par
+Essa parte que come\'e7a com @ tem que ficar no inicio do c\'f3digo css, depois de style, ou ent\'e3o se for em uma pagina separada, l\'e1 no inicio depois de @charchet, n\'e3o pode estar dentro de uma classe, depois dentro de uma classe, ex body, voc\'ea expecifica a font-family com o nome da fonte que escolheu\par
+\par
+\b ADICIONAR FONTES EXTERNAS DE OUTRO SITE \par
+\b0 Acesse o site da fonte e fa\'e7a o download do arquivo da fonte, caso o cliente j\'e1 tenha uma fonte especifica, siga os mesmos passos. \par
+Coloque os arquivos das fontes na pasta do seu c\'f3digo, sempre crie uma pasta fontes para que fique organizado. \par
+No seu c\'f3digo, logo abaixo de style, voc\'ea vai incluir uma regra, @font-face, ir\'e1 colocar um nome para a fonte em font-family e em url coloca exatamente o nome do arquivo que foi baixado, e depois format, que \'e9 o formato da fonte, veja como ficar\'e1 no c\'f3digo\par
+ \par
+@font-face \{\par
+            font-family: Infinitely;\par
+            src: url\cf1 ('fonte/(SE AS FONTES ESTIVEREM EM UMA PASTA, TEM QUE COLOCAR O NOME DA PASTA TAMB\'c9M)\cf0 Infinitely Free.\cf4 otf(NO FINAL DO NOME DA FONTE, TEM QUE ADICIONAR A EXTENS\'c3O DA FONTE)\cf0 ') format('\cf4 opentype\cf0 '), url('fonte/Infinitely Free.ttf') format('truetype');\par
+\par
+\b TIPOS DE EXTENS\'d5ES DE FONTES (FORMAT)\par
+\b0 Opentype (otf), truetype(ttf), embedded-opentype, truetype-aat(Apple Advanced Typography), svg\par
+\par
+Sites para identifica\'e7\'e3o de fontes em imagens: \par
+\f1 Usando o WhatFontIs\par
+Usando o Font Squirrel\par
+Usando o MyFonts\b\f0\par
+\b0\par
+\b SELETORES PERSONALIZADOS \par
+\par
+EM HTML \'e9 id= em CSS \'e9 #\par
+EM HTML \'e9 class= em CSS \'e9 . (ponto final)\b0\par
+No seu c\'f3digo se tem v\'e1rios titulos h1, com as mesmas configura\'e7\'f5es, mas voc\'ea precisa que um deles tenha outras configura\'e7\'f5es de estilo, voc\'ea ir\'e1 criar um id para esse h1 <h1 id='personalizado \cf1 (pode ser qualquer nome)\cf0 '>  e no css ir\'e1 criar outra chaves para esse h1 personalizado escrevendo assim h1#personalizado \{.\par
+\cf1 OBS: ID= S\'d3 PODE SER USADO UMA VEZ NO C\'d3DIGO, PARA UMA TAG E UMA CONFIGURA\'c7\'c3O APENAS, PARA ALTERAR MAIS LINHAS E ITENS, USE CLASS\par
+\par
+\cf0 Class= tem a mesma fun\'e7\'e3o que o id=, por\'e9m pode ser usado v\'e1rias vezes ao longo do c\'f3digo. \par
+\par
+\b PSEUDO CLASSES\par
+DIV:HOVER\par
+\b0 <div></div> - s\'e3o caixas personalizaveis que se colocam conteudos, \'e9 um espa\'e7o\par
+: (dois pontos) s\'e3o pseudo-classes, elas tem que estar relacionadas a um elemento ou uma classe, relacionados ao estado de determinado elemento. \par
+ex: \b div:hover\b0 , quando passar o mouse por cima, vai acontecer algo, e voc\'ea configura o que vai acontecer \par
+EX02: Voc\'ea consegue colocar paragrafos dentro das divs,  elas ser\'e3o paragrafos filhos, \par
+Para esconder o paragrafo que est\'e1 dentro da div, v\'e1 em style, crie a div \cf1 >(ESSE SIMBOLO FALA QUE O PARAGRAFO EST\'c1 DENTRO DA DIV)\cf0  p e escreva \par
+\b display: none\b0 ; que \'e9 para \'e9 para esconder o que est\'e1 dentro do paragrafo, para passar o mouse por cima do texto e aparecer o paragrafo, inclua \par
+div:hover >p \{\par
+display: block\par
+\}\par
+Ent\'e3o ir\'e1 aparecer o que est\'e1 oculto, esse c\'f3digo serve para menus. \par
+\par
+:visited - para tirar a cor dos links j\'e1 acessados, sabe aquela cor padr\'e3o dos links, um tipo de violeta ? essa pseudoclasse serve para tirar aquela cor\par
+:hover - \{text:decoration: underline\} - serve para quando passar o mouse por cima, ele fique sublinhado e caso queira que troque de cor, coloque color.\par
+:active - \'e9 para mudar de cor enquanto o link est\'e1 clicado \par
+\par
+\b PSEUDO-ELEMENTOS\par
+::(DUAS VEZES DOIS PONTOS) - \b0 serve para modificar elementos no codigo, de uma unica vez, os mais usados, s\'e3o:\par
+::before, ::after, ::first-letter, ::first-line\par
+\par
+\b MODELO DE CAIXAS\par
+\b0 Tudo que est\'e1 dentro da p\'e1gina web, est\'e1 dentro de uma caixa. \par
+height - \'e9 a altura\par
+width - \'e9 a largura\par
+border - \'e9 a moldura do conte\'fado, por padr\'e3o a moldura fica muito colada no conteudo, para colocar um espa\'e7o, se usa \par
+padding- \'e9 o espa\'e7o entre o conteudo e a moldura, o preenchimento da caixa\par
+margin - \'e9 o que circula o border\par
+outline - \'e9 para criar o tra\'e7ado fora da borda\par
+\b\par
+TIPOS DE CAIXAS\b0\par
+\b box level - \b0 Ele fica isolado, se tem um texto, e colocar o box level, ele ir\'e1 pular de linha, ficara sozinho no paragrafo e o restante do texto ir\'e1 come\'e7ar na proxima linha\par
+
+\pard\ri-782\sa200\sl276\slmult1\tx9372\b ex: <div>,<h1>,<h6>,<p>,<main>,<header>,<nav>,<article>,<aside>,<footer>,\par
+<form>,<video>\b0\par
+
+\pard\sa200\sl276\slmult1\b inline-level-\b0 Ele fica no meio da linha, no meio do texto, n\'e3o pula paragrafo \b\par
+ex:<span>,<a>,<code>,<small>,<strong>,<em>,<sup>,<sub><label><button><input>, <select>\par
+\b0\par
+\par
+\par
+\par
+\par
+\b\par
+\b0\fs22\par
+\par
+}
+ 

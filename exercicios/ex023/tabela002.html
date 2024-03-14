@@ -10,12 +10,26 @@
             font-family: Verdana, Geneva, Tahoma, sans-serif;
         }
 
+        tbody > tr:nth-child(odd) {
+            background-color: rgba(197, 163, 228, 0.521);
+        }
+        
+
         table{
             width: 320px;
             border-collapse: collapse;
             
         }
 
+        caption{
+            background-color: rgba(0, 0, 0, 0.486);
+            color: white;
+            font-size: 1em;
+            font-weight: bold;
+            padding: 10px;
+
+
+        }
     .num {
         text-align: right;
     }
@@ -26,14 +40,15 @@
     }
 
     thead, tfoot{
-        background-color: rgb(91, 58, 121);
+        background-color: #5b3a79;
         color: white;
     }
     </style>
 </head>
 <body>
-    <h1>Dez Estados Mais Populosos do Brasil</h1>
+    <h1>Tabelas grandes</h1>
     <table>
+        <caption>Dez Estados Mais Populosos do Brasil</caption>
         <thead>
             <tr>
                 <th>Estado</th>
